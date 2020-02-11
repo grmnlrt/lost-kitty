@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  # /pets/2 (get)
   get "/pets", to: "pets#index"
   get "/pets/new", to: "pets#new"
 
@@ -12,5 +9,4 @@ Rails.application.routes.draw do
 
   get "/pets/:id/edit", to: "pets#edit", as: :edit_pet
   patch "/pets/:id", to: "pets#update"
-
 end
